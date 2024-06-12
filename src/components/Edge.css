@@ -1,0 +1,6 @@
+/* Edge.css */
+.edge {
+  position: absolute;
+  background-color: black;
+  z-index: -1;
+}

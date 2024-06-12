@@ -1,0 +1,16 @@
+/* Node.css */
+.node {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.node p {
+  margin: 0;
+}
+
+.node.selected {
+  border-color: blue;
+}
