@@ -4,76 +4,99 @@
 ## hosted link 
 https://chatbot-flow-builder-by-hk.vercel.app/
 
+# Chatbot Flow Builder
+
+This project is a Chatbot flow builder implemented in React. It allows users to create conversation flows by dragging and dropping text nodes and connecting them with edges.
+
+## Features
+
+1. **Flow Builder**
+   - Drag and drop text nodes to create a flow.
+   - Connect nodes with edges to define conversation paths.
+
+2. **Text Node**
+   - Supports text messages as nodes.
+   - Multiple text nodes can be added to the flow.
+
+3. **Nodes Panel**
+   - Initially supports only text nodes.
+   - Designed to be extensible for future node types.
+
+4. **Edge**
+   - Connects two nodes together to represent conversation paths.
+
+5. **Source Handle**
+   - Starting point of an edge from a node.
+
+6. **Target Handle**
+   - Ending point of an edge on a node.
+
+7. **Settings Panel**
+   - Appears when a node is selected, allowing editing of node text.
+
+8. **Save Button**
+   - Validates the flow before saving.
+   - Shows an error if:
+     - There are more than one node.
+     - More than one node has empty target handles.
+
+## Project Structure
 
 
+|-- src/
+| |-- App.js
+| |-- App.css
+| |-- components/
+| |-- FlowBuilder.js
+| |-- FlowBuilder.css
+| |-- Node.js
+| |-- Node.css
+| |-- Edge.js
+| |-- Edge.css
+| |-- SettingsPanel.js
+| |-- SettingsPanel.css
+| |-- SaveButton.js
+| |-- SaveButton.css
+|-- README.md
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+To run the project locally, follow these steps:
 
-In the project directory, you can run:
+1. **Clone the repository:**
+git clone [https://github.com/your/repository.git](https://github.com/HANAMANTAPPA/chatbot-flow-builder_by_HK)
+cd hatbot-flow-builder_by_HK
 
-### `npm start`
+2. **Install dependencies:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Run the application:**
 
-### `npm test`
+4. **Open in browser:**
+Open http://localhost:3000 to view the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Adding Nodes:**
+- Drag nodes from the panel onto the canvas.
+- Nodes are represented as text messages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Connecting Nodes:**
+- Click and drag from a source handle on one node to a target handle on another to create an edge.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Editing Node Text:**
+- Click on a node to select it.
+- The settings panel will appear, allowing you to edit the text of the selected node.
 
-### `npm run eject`
+- **Saving the Flow:**
+- Click the "Save Flow" button.
+- The flow will be validated:
+ - Ensure there is more than one node.
+ - Ensure no node has empty target handles.
+- If validation passes, the flow is saved.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
