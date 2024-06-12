@@ -96,7 +96,3 @@ Open http://localhost:3000 to view the app.
  - Ensure there is more than one node.
  - Ensure no node has empty target handles.
 - If validation passes, the flow is saved.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
